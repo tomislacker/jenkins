@@ -85,15 +85,8 @@
   },
   "Mappings": {
     "RegionMap": {
-      "ap-southeast-2": {
-        "AMI": "ami-9e614afd"
-      },
-      "us-west-1": {
-        "AMI": "ami-063c7b66"
-      },
-      "us-west-2": {
-        "AMI": "ami-4e7dbb2e"
-      }
+      "us-east-1": {"AMI": "ami-e158e0f6"},
+      "us-west-2": {"AMI": "ami-72a16012"}
     }
   },
   "Resources": {
