@@ -16,8 +16,7 @@
       "instance_type": "t2.micro",
       "ami_name": "jenkins-docker-host {{timestamp}}",
       "ami_regions": [
-        "ap-southeast-2",
-        "us-west-1"
+        "us-east-1"
       ]
     }
   ],
