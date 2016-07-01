@@ -129,7 +129,25 @@
         ],
         "Subnets": {
           "Ref": "publicSubnets"
-        }
+        },
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "jenkins"
+          },
+          {
+            "Key": "Department",
+            "Value": "Engineering"
+          },
+          {
+            "Key": "EngineeringTeam",
+            "Value": "ALL"
+          },
+          {
+            "Key": "Project",
+            "Value": "ALL"
+          }
+        ]
       },
       "Type": "AWS::ElasticLoadBalancing::LoadBalancer"
     },
@@ -535,6 +553,21 @@
             "Key": "Name",
             "PropagateAtLaunch": true,
             "Value": "jenkins"
+          },
+          {
+            "Key": "Department",
+            "Value": "Engineering",
+            "PropagateAtLaunch": true
+          },
+          {
+            "Key": "EngineeringTeam",
+            "Value": "ALL",
+            "PropagateAtLaunch": true
+          },
+          {
+            "Key": "Project",
+            "Value": "ALL",
+            "PropagateAtLaunch": true
           }
         ],
         "VPCZoneIdentifier": {
